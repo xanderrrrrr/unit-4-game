@@ -5,7 +5,9 @@ body {
 .fillTawny {
     background-color: rgb(206, 91, 14);
     width: 20%;
-    padding: 5px;
+    padding: 20px;
+    font-size: 48px;
+    color: white;
 }
 
 #instructions {
@@ -13,5 +15,28 @@ body {
     color: green;
     word-wrap: break-word;
     width: 30%;
-    padding-bottom: 20px;;
+    padding: 10px 5px 50px 0px;
+    line-height: 200%;
+}
+
+#random-number {
+    background-color: green;
+    width: 90px;
+}
+
+.floating {
+    /* float: left; */
+    width: 70px;
+}
+
+.nothing {
+    /* clear: both; */
+}
+
+.crystal {
+    clear: left;
+}
+
+#random-number {
+    font-size: 32px;
 }

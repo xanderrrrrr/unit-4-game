@@ -7,8 +7,11 @@
         <!-- Link to the jquery library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+        <!-- Link to in-house js -->
+        <script src="assets/javascript/game.js"></script>
+
         <!-- Link to in-house reset stylesheet-->
-        <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+        <link rel="stylesheet" href="assets/css/reset.css">
 
         <!-- Here's a link to the actual stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -25,20 +28,20 @@
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
         <div id="numbers-display">
-            <div id="random-number"></div>
+            <div id="random-number" class="floating">placeholder text</div>
             <div id="wins-losses-container">
-                <div id="wins">Wins: </div>
-                <div id="losses">Losses: </div>
+                <div id="wins" class="floating">Wins: </div>
+                <div id="losses" class="floating">Losses: </div>
             </div>
         </div>
         <div id="crystals-display">
-            <div id="redCrystal"></div>
-            <div id="blueCrystal"></div>
-            <div id="yellowCrystal"></div>
-            <div id="greenCrystal"></div>
+            <img src="assets/images/orange-crystal.png" id="orange-crystal" class="crystal"/>
+            <img src="assets/images/blue-crystal.png" id="blue-crystal" class="crystal"/>
+            <img src="assets/images/yellow-crystal.png" id="yellow-crystal" class="crystal">
+            <img src="assets/images/green-crystal.png" id="green-crystal" class="crystal">
         </div>
         <div id="nothing">Your total score is: </div>
-        <div id="total-scofe"></div>
+        <div id="total-score"></div>
 
     </body>
 </html>
