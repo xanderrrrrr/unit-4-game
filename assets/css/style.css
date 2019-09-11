@@ -1,0 +1,17 @@
+body {
+    background: url(../images/uglybackground.png)
+}
+
+.fillTawny {
+    background-color: rgb(206, 91, 14);
+    width: 20%;
+    padding: 5px;
+}
+
+#instructions {
+    background-color: peachpuff;
+    color: green;
+    word-wrap: break-word;
+    width: 30%;
+    padding-bottom: 20px;;
+}
