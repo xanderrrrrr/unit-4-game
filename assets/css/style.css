@@ -8,7 +8,7 @@ body {
     background-color: rgb(206, 91, 14);
     width: 30%;
     padding: 20px;
-    font-size: 48px;
+    font-size: 32px;
     color: white;
     margin-bottom: 10px;
 }
@@ -26,7 +26,7 @@ body {
 #random-number {
     background-color: green;
     width: 90px;
-    font-size: 32px;
+    font-size: 24px;
     float: left;
     padding: 10px 80px 40px 10px;
     color: white;
@@ -60,7 +60,7 @@ body {
     padding: 10px;
     padding-bottom: 40px;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #crystals-display {
