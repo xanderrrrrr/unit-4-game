@@ -18,9 +18,10 @@ body {
     color: green;
     word-wrap: break-word;
     width: 30%;
-    padding: 10px 5px 50px 0px;
+    padding: 10px 5px 30px 0px;
     line-height: 200%;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 #random-number {
@@ -89,6 +90,6 @@ body {
     width: 80px;
     padding: 10px;
     float: left;
-    height: 62px;
+    height: 54px;
 
 }
