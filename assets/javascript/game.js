@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     // everything starts when the DOM is ready
 
@@ -12,6 +12,8 @@ $(document).ready(function() {
     var crystal2;
     var crystal3;
     var crystal4;
+    reset();
+
 
     function randomizer() {
         // this will get the adequate target number based on hw requirements
@@ -24,9 +26,17 @@ $(document).ready(function() {
         crystal3 = numberOptions[2];
         crystal4 = numberOptions[3];
         console.log(crystal1 + " " + crystal2 + " " + crystal3 + " " + crystal4)
+        console.log(targetNumber)
     }
 
-    randomizer();
+    // this is the reset function that will re-set the variables
+    function reset() {
+        // I will re-invoke the randomizer function
+        randomizer()
+        totalScore = 0
+        $("#total-score").text(totalScore);
+        $("#random-number").text(targetNumber);
+    }
 
 
 
