@@ -29,13 +29,24 @@ body {
     width: 70px;
 }
 
-.nothing {
-    /* clear: both; */
+#nothing {
+    background-color: teal;
+    width: 10%;
+    padding: 5px;
+    margin-bottom: 2px;
+    color: white;
 }
 
-.crystal {
-    clear: left;
+#total-score {
+    background-color: teal;
+    width: 10%;
+    padding: 5px;
+    padding-bottom: 40px;
 }
+
+/* .crystal {
+    clear: left;
+} */
 
 #random-number {
     font-size: 32px;
