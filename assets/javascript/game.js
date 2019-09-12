@@ -20,7 +20,7 @@ $(document).ready(function () {
         targetNumber = Math.floor((Math.random() * 101) + 19);
         // this will set a random number to my array 
         numberOptions = Array.from({ length: 4 }, () => Math.floor(Math.random() * 12) + 1);
-        // assigning my array indeces to my crystals
+        // assigning my array indices to my crystals
         crystal1 = numberOptions[0];
         crystal2 = numberOptions[1];
         crystal3 = numberOptions[2];
@@ -40,21 +40,27 @@ $(document).ready(function () {
         // pushing the randomized target number to the target div
         $("#random-number").text(targetNumber);
     }
-
+    // defining my onclick function for class = crystal
     $(".crystal").on("click", function () {
+        // grabbing the clicked crystal's id and storing it 
         var crystalClick = $(this).attr("id");
-        console.log(crystalClick); if (crystalClick === "orange-crystal") {
+        // console.log(crystalClick); 
+        // if it's the orange crystal add to the total score and push totalscore
+        if (crystalClick === "orange-crystal") {
             totalScore = totalScore + crystal1;
             $("#total-score").text(totalScore);
         }; 
+        // if it's the blue crystal....
         if (crystalClick === "blue-crystal") {
             totalScore = totalScore + crystal2;
             $("#total-score").text(totalScore);
         }; 
+        // if it's the yellow crystal...
         if (crystalClick === "yellow-crystal") {
             totalScore = totalScore + crystal3;
             $("#total-score").text(totalScore);
         }; 
+        // if it's the green crystal...
         if (crystalClick === "green-crystal") {
             totalScore = totalScore + crystal4;
             $("#total-score").text(totalScore);
