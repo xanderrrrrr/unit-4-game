@@ -33,7 +33,7 @@ $(document).ready(function () {
     function reset() {
         // I will re-invoke the randomizer function
         randomizer()
-        // setting the total score to 0
+        // re-setting the total score to 0
         totalScore = 0
         // pushing the total score to the html div
         $("#total-score").text(totalScore);
@@ -51,22 +51,34 @@ $(document).ready(function () {
             totalScore = totalScore + crystal2;
             $("#total-score").text(totalScore);
         }; 
-        if (crystalClick === "crystal3") {
+        if (crystalClick === "yellow-crystal") {
             totalScore = totalScore + crystal3;
             $("#total-score").text(totalScore);
         }; 
-        if (crystalClick === "crystal4") {
+        if (crystalClick === "green-crystal") {
             totalScore = totalScore + crystal4;
             $("#total-score").text(totalScore);
         }; 
+        // this is the winning condition
         if (totalScore === targetNumber) {
+            // setting the running counter for wins if target number reached
             wins = wins + 1;
+            // pushing to the wins div
             $("#wins").text("Wins: " + wins);
+            // pushing to another dive stating they won
+            $("#win-lose-display").text("You won!!")
+            // invoking the reset so we can do it all over agagin
             reset();
         };
+        // this is the losing condition
         if (totalScore > targetNumber) {
+            // setting the running counter for losses if the target number goes above
             losses = losses + 1;
+            // pushing to the div saying they lost
+            $("#win-lose-display").text("You lost!!")
+            // pushing to the losses div showing the running losses
             $("#losses").text("Losses: " + losses);
+            // invoking the reset so we can do it all over again
             reset();
         }
         
