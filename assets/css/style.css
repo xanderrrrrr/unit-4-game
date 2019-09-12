@@ -26,8 +26,19 @@ body {
 #random-number {
     background-color: green;
     width: 90px;
-    font-size: 48px;
+    font-size: 32px;
     float: left;
+    padding: 10px 80px 40px 10px;
+    color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    /* padding-right: 80px;
+    padding-bottom: 40px; */
+
+}
+
+.crystal { 
+    margin: 10px;
 }
 
 .floating {
@@ -38,18 +49,18 @@ body {
 #nothing {
     background-color: teal;
     width: 10%;
-    padding: 5px;
-    margin-bottom: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
     color: white;
 }
 
 #total-score {
     background-color: teal;
     width: 10%;
-    padding: 5px;
+    padding: 10px;
     padding-bottom: 40px;
     color: white;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 #crystals-display {
@@ -57,6 +68,27 @@ body {
 
 }
 
-#win-lose-display {
+/* #wins, #losses {
     position: relative;
+    background-color: aqua;
+    width: 80px;
+    padding: 10px;
+    float: left;
+} */
+
+/* #win-lose-display {
+    background-color: aqua;
+    width: 80px;
+    position: static;
+    float: left;
+
+} */
+
+#wins-losses-container {
+    background-color: aqua;
+    width: 80px;
+    padding: 10px;
+    float: left;
+    height: 62px;
+
 }
