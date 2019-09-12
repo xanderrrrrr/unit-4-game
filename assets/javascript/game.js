@@ -33,10 +33,44 @@ $(document).ready(function () {
     function reset() {
         // I will re-invoke the randomizer function
         randomizer()
+        // setting the total score to 0
         totalScore = 0
+        // pushing the total score to the html div
         $("#total-score").text(totalScore);
+        // pushing the randomized target number to the target div
         $("#random-number").text(targetNumber);
     }
+
+    $(".crystal").on("click", function () {
+        var crystalClick = $(this).attr("id");
+        console.log(crystalClick); if (crystalClick === "orange-crystal") {
+            totalScore = totalScore + crystal1;
+            $("#total-score").text(totalScore);
+        }; 
+        if (crystalClick === "blue-crystal") {
+            totalScore = totalScore + crystal2;
+            $("#total-score").text(totalScore);
+        }; 
+        if (crystalClick === "crystal3") {
+            totalScore = totalScore + crystal3;
+            $("#total-score").text(totalScore);
+        }; 
+        if (crystalClick === "crystal4") {
+            totalScore = totalScore + crystal4;
+            $("#total-score").text(totalScore);
+        }; 
+        if (totalScore === targetNumber) {
+            wins = wins + 1;
+            $("#wins").text("Wins: " + wins);
+            reset();
+        };
+        if (totalScore > targetNumber) {
+            losses = losses + 1;
+            $("#losses").text("Losses: " + losses);
+            reset();
+        }
+        
+    })
 
 
 
